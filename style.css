@@ -1,0 +1,311 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&family=Montserrat:wght@600&display=swap');
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+      margin: 0;
+      background-image: url('https://res.cloudinary.com/nihars3/image/upload/v1696232927/photo-1619429858348-2d5ad1547e6c_nnvynb.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  /* Navbar */
+  .navbar {
+      position: sticky;
+      top: 0;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px; 
+      z-index: 100;
+  }
+
+  .logo {
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+  .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+  }
+
+  .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s;
+  }
+
+  .nav-links li a:hover {
+      color: #00bcd4;
+  }
+
+.section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 85vh;
+}
+.home-left {
+    width: 50vw;
+    text-align: right;
+    padding-left: 200px;
+}
+.home-right {
+    width: 50vw;
+    padding-left: 100px;
+}
+.home-h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+.home-p {
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 20px;
+}
+
+  .imgg {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  }
+
+  /* About*/
+.about-heading {
+    text-align: center;
+    color: lightgreen;
+    font-size: 48px;
+    margin: 30px 0 20px;
+
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: white;
+    text-align: left;  /* aligns text to left */
+}
+
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+
+  /* Skills */
+  .skills-heading {
+      text-align: center;
+      color: lightgreen;
+      font-size: 48px;
+      margin: 50px 0;
+  }
+
+  .skills-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 0 20px;
+  }
+
+  .skill-card {
+      width: 280px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      padding: 25px;
+      color: #fff;
+      transition: 0.3s;
+  }
+
+  .skill-card:hover {
+      transform: scale(1.05);
+  }
+
+  .skill-header {
+      display: flex;
+      align-items: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+      gap: 15px;
+  }
+
+  .skill-progress {
+      width: 100%;
+      height: 15px;
+      background: rgba(255,255,255,0.3);
+      border-radius: 50px;
+      overflow: hidden;
+  }
+
+  .skill-bar {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 50px;
+      padding-right: 12px;
+      animation: fillBar 2s ease-in-out;
+  }
+
+  .skill-bar.html { background: linear-gradient(90deg, #ff512f, #dd2476); width: 70%; }
+  .skill-bar.css { background: linear-gradient(90deg, #36d1dc, #5b86e5); width: 70%; }
+  .skill-bar.js { background: linear-gradient(90deg, #f7971e, #ffd200); width: 75%; }
+  .skill-bar.react { background: linear-gradient(90deg, #00c6ff, #0072ff); width: 60%; }
+  .skill-bar.bootstrap { background: linear-gradient(90deg, #7952b3, #9b59b6); width: 60%; }
+  .skill-bar.nodejs { background: linear-gradient(90deg, #3c873a, #76b852); width: 70%; }
+  .skill-bar.express { background: linear-gradient(90deg, #232323, #757575); width: 65%; }
+  .skill-bar.mongodb { background: linear-gradient(90deg, #4db33d, #30a14e); width: 65%; }
+  .skill-bar.java { background: linear-gradient(90deg, #f89820, #ff512f); width: 75%; }
+
+  @keyframes fillBar {
+      from { width: 0; }
+  }
+
+  /* Projects */
+  .si {
+      text-align: center;
+      color: lightgreen;
+      font-size: 48px;
+      margin: 50px 0;
+  }
+
+  .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .project-card {
+      width: 300px;
+      background-color: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+      color: #1a237e;
+  }
+
+  .project-card:hover {
+      transform: translateY(-5px);
+  }
+
+  .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+  }
+
+  .project-card h3 {
+      margin: 10px 16px 4px;
+      font-size: 20px;
+      color: #3949ab;
+  }
+
+  .project-card p {
+      margin: 0 16px 12px;
+      font-size: 14px;
+      color: #555;
+  }
+
+  .project-links {
+      display: flex;
+      gap: 12px;
+      padding: 12px 16px 16px;
+  }
+
+  .project-links a {
+      background-color: #3949ab;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      min-width: 90px;
+      text-align: center;
+  } 
+
+  .project-links a:hover {
+      background-color: #00bcd4;
+  }
+
+  /* Contact */
+  .contact {
+      text-align: center;
+      margin: 50px 20px;
+  }
+
+  .con {
+      color: lightgreen;
+      font-size: 48px;
+      margin-bottom: 20px;
+  }
+
+  .contact-info p {
+      font-size: 22px;
+      margin: 10px 0;
+  }
+
+  .social-icon-img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin: 10px;
+      object-fit: cover;
+      transition: transform 0.3s;
+  }
+
+  .social-icon-img:hover {
+      transform: scale(1.1);
+  }
+  .contact {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
