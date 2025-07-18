@@ -103,14 +103,14 @@
     text-align: center;
     color: lightgreen;
     font-size: 48px;
-    margin: 30px 0 20px;
+    margin: 20px 0 10px;
 
 }
 
 .about-content {
     max-width: 900px;
-    margin: 0 auto 50px;
-    padding: 30px;
+    margin: 0 auto 30px;
+    padding: 20px;
     border-radius: 20px;
     font-size: 20px;
     line-height: 1.8;
